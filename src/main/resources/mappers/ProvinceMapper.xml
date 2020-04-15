@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="top.stelaino.rg.mapper.ProvinceMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="top.stelaino.rg.entity.Province">
+        <id column="id" property="id" />
+        <result column="province_name" property="provinceName" />
+        <result column="province_short_name" property="provinceShortName" />
+        <result column="current_confirmed_count" property="currentConfirmedCount" />
+        <result column="confirmed_count" property="confirmedCount" />
+        <result column="suspected_count" property="suspectedCount" />
+        <result column="cured_count" property="curedCount" />
+        <result column="dead_count" property="deadCount" />
+        <result column="comment" property="comment" />
+        <result column="create_time" property="createTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, province_name, province_short_name, current_confirmed_count, confirmed_count, suspected_count, cured_count, dead_count, comment, create_time
+    </sql>
+
+</mapper>

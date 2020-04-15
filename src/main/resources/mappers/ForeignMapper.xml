@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="top.stelaino.rg.mapper.ForeignMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="top.stelaino.rg.entity.Foreign">
+        <id column="id" property="id" />
+        <result column="record_time" property="recordTime" />
+        <result column="continents" property="continents" />
+        <result column="province_name" property="provinceName" />
+        <result column="current_confirmed_count" property="currentConfirmedCount" />
+        <result column="confirmed_count" property="confirmedCount" />
+        <result column="confirmed_count_rank" property="confirmedCountRank" />
+        <result column="suspected_count" property="suspectedCount" />
+        <result column="cured_count" property="curedCount" />
+        <result column="dead_count" property="deadCount" />
+        <result column="dead_count_rank" property="deadCountRank" />
+        <result column="dead_rate" property="deadRate" />
+        <result column="dead_rate_rank" property="deadRateRank" />
+        <result column="country_short_code" property="countryShortCode" />
+        <result column="country_full_name" property="countryFullName" />
+        <result column="current_confirmed_incr" property="currentConfirmedIncr" />
+        <result column="cured_incr" property="curedIncr" />
+        <result column="confirmed_incr" property="confirmedIncr" />
+        <result column="dead_incr" property="deadIncr" />
+        <result column="create_time" property="createTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, record_time, continents, province_name, current_confirmed_count, confirmed_count, confirmed_count_rank, suspected_count, cured_count, dead_count, dead_count_rank, dead_rate, dead_rate_rank, country_short_code, country_full_name, current_confirmed_incr, cured_incr, confirmed_incr, dead_incr, create_time
+    </sql>
+
+</mapper>

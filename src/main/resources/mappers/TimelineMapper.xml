@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="top.stelaino.rg.mapper.TimelineMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="top.stelaino.rg.entity.Timeline">
+        <id column="id" property="id" />
+        <result column="new_time" property="newTime" />
+        <result column="title" property="title" />
+        <result column="summary" property="summary" />
+        <result column="info_source" property="infoSource" />
+        <result column="source_url" property="sourceUrl" />
+        <result column="province_name" property="provinceName" />
+        <result column="create_time" property="createTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, new_time, title, summary, info_source, source_url, province_name, create_time
+    </sql>
+
+</mapper>

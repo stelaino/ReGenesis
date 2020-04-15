@@ -1,0 +1,22 @@
+server:
+  port: ${PORT:10000}
+spring:
+  application:
+    name: easybuy-itemcat-service
+  datasource:
+    url: jdbc:mysql://localhost:3306/regenesis?serverTimezone=UTC
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    druid:
+      initial-size: 1
+      min-idle: 1
+      max-active: 20
+      #获取链接时测试是否可用
+      test-on-borrow: true
+      #监控页面启动
+      stat-view-servlet:
+        reset-enable: true
+mybatis-plus:
+  mapper-locations: classpath:mappers/*.xml
+  type-aliases-package: top.stelaino.rg.entity
