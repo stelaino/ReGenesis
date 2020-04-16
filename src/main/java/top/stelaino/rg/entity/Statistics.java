@@ -64,6 +64,7 @@ public class Statistics implements Serializable {
      * 设置时间和校正对象中的foreignStatistics和globalStatistics属性
      */
     public void correctionInformation() {
+        this.setCreateTime(null);
         this.recordTime = DateFormat.getDateTimeInstance().format(new Date(modifyTime));
         if (this.foreignStatistics != null) {
             this.foreignStatistics.setRecordTime(this.recordTime);
